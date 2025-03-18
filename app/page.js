@@ -1,12 +1,13 @@
-import { Button } from "@/components/ui/button";
-import Image from "next/image";
+"use client";
+import { useEffect } from "react";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
-  return (
-    <div>
-      <h1>Suraj Kumar Subudhi</h1>
-      <Button>Login</Button>
-    </div>
-    
-  );
+  const router = useRouter();
+
+  useEffect(() => {
+    router.replace("/dashboard");
+  }, [router]);
+
+  return null;
 }
