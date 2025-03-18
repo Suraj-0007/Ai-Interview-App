@@ -5,7 +5,7 @@ import { useUser } from '@clerk/nextjs'
 import { desc, eq } from 'drizzle-orm';
 import { index } from 'drizzle-orm/mysql-core';
 import React, { useEffect, useState } from 'react'
-import InterviewItemCard from './interviewItemCard';
+import InterviewItemCard from './InterviewItemCard';
 
 
 function InterviewList() {
